@@ -1,0 +1,31 @@
+.onglets {
+    border-left: 1px solid #404040;
+    height: 100%;
+}
+
+.onglets ul.ongletsMenu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onglets .onglets-menu-item {
+    background-color: #404040;
+    color: #FFFFFF;
+}
+
+.onglets .onglets-menu-item {
+    flex: 1;
+    font-size: large;
+    cursor: pointer;
+}
+
+.onglets .onglets-menu-item:hover {
+    background-color: #606060;
+}
+
+.onglets .on {
+    background-color: #606060;
+}

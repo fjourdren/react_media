@@ -1,0 +1,13 @@
+.map {
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+
+.map .placeLink {
+    cursor: pointer;
+    color: #444444;
+}
+
+.map .placeLink:hover {
+    text-decoration: underline;
+}

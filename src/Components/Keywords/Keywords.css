@@ -1,0 +1,38 @@
+.keywords {
+    padding: 10px 50px;
+} 
+
+.keywords .keywordsButton {
+    cursor: pointer;
+}
+
+.keywords .keywordsButton:hover {
+    color: #606060;
+}
+
+.keywords .keywordsListing {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+}
+
+.keywords .keyword {
+    width: 30%;
+    min-height: 100px;
+    margin: 7px 5px;
+    padding: 5px 7px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+}
+
+.keywords .keyword .time {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.keywords .keyword .time:hover {
+    color: #606060;
+}
