@@ -5,6 +5,7 @@ import { ChaptersList } from "./Chapters/ChaptersList";
 import { Chat } from "./Chat/Chat";
 import { Map } from "./Map/Map";
 import { Keywords } from "./Keywords/Keywords";
+import { Title } from "./Title/Title";
 import logo from '../logo.svg';
 import './Page.css';
 
@@ -60,9 +61,8 @@ export class Page extends React.Component {
                                 time={ this.state.time }
                                 file_url={ this.state.data.Film.file_url }/>
 
-                            <h1 className="title">{ this.state.data.Film.title }</h1>
-                            <a href={ this.state.data.Film.synopsis_url } target="_blank" rel="noreferrer">Synopsis</a>
-                            
+                            <Title title={ this.state.data.Film.title } synopsis_url={ this.state.data.Film.synopsis_url }/>
+
                             <Map timeHandler={ this.timeHandler.bind(this) } waypoints={ this.state.data.Waypoints }/>
                         
                             <Keywords timeHandler={ this.timeHandler.bind(this) } keywords={ this.state.data.Keywords } timeHandler={ this.timeHandler.bind(this) }/>
