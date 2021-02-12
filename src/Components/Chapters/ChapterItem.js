@@ -9,7 +9,7 @@ export class ChapterItem extends React.Component {
 
     render() {
         return (
-            <li onClick={this.props.timeHandler.bind(this, this.props.chapter.pos)}>{this.props.chapter.title}</li>
+            <li className="chapterName" onClick={this.props.timeHandler.bind(this, this.props.chapter.pos)}>{this.props.chapter.title}</li>
         );
     }
 }

@@ -34,10 +34,9 @@ export class Keyword extends React.Component {
         return (
             <div className="keyword">
                 <p className="time" onClick={this.props.timeHandler.bind(this, this.props.item.pos)}>{ this.toDisplayableTime(this.props.item.pos) }</p>
-                <ul key={ "keyword-" + this.props.item.index }
-                    onClick={ this.props.timeHandler.bind(this, this.props.item.pos) }>
-                    { this.props.item.data.map((item_link) => (
-                        <li>see <a href={ item_link.url } target="_blank" rel="noreferrer">{ item_link.title }</a></li>
+                <ul onClick={ this.props.timeHandler.bind(this, this.props.item.pos) }>
+                    { this.props.item.data.map((item_link, index) => (
+                        <li key={ "keywordMoment-" + index } >see <a href={ item_link.url } target="_blank" rel="noreferrer">{ item_link.title }</a></li>
                     ))}
                 </ul>
             </div>

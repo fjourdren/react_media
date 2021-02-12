@@ -75,7 +75,7 @@ export class Chat extends React.Component {
 
     render() {
         return (
-            <div class="chat">
+            <div className="chat">
                 <div className="messages-container">
                     {this.state.messages.map((item, index) => (
                         <Message 

@@ -16,7 +16,7 @@ export class Title extends React.Component {
         return (
             <div>
                 <h1 className="title">{ this.props.title }</h1>
-                <a href={ this.props.synopsis_url } target="_blank" rel="noreferrer">Synopsis</a>
+                <a className="synopsis" href={ this.props.synopsis_url } target="_blank" rel="noreferrer">Synopsis</a>
             </div>
         );
     }

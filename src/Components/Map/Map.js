@@ -29,7 +29,7 @@ export class Map extends React.Component {
             <MapContainer className="map" center={ this.props.waypoints[0] } zoom={ 4 } scrollWheelZoom={ false } style={{height:"500px"}}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                 { this.props.waypoints.map((item, index) => (
-                    <Marker position={ item }>
+                    <Marker className="marker" key={ "marker" + index } position={ item }>
                         <Popup>
                             <h4 className="placeLink" onClick={this.props.timeHandler.bind(this, item.timestamp)}>{ item.label }</h4>
                         </Popup>

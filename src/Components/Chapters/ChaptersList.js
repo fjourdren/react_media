@@ -5,14 +5,14 @@ import './Chapters.css'
 
 export class ChaptersList extends React.Component {
     static propTypes = {
-        chapters: PropTypes.array.isRequired,
+        chapters: PropTypes.array,
         timeHandler: PropTypes.func.isRequired
     };
 
     render() {
         if(!this.props.chapters) {
             return (
-                <h3>Aucun chapitre</h3>
+                <h3 className="noChapt">Aucun chapitre</h3>
             );
         }
         

@@ -27,11 +27,11 @@ export class WebsitePlayer extends React.Component {
     render() {
         return (
             <div>
-            <Player
-                ref={ player => { this.player = player; }}
-                autoPlay
-                src={ this.props.file_url }
-            />
+                <Player
+                    ref={ player => { this.player = player; }}
+                    autoPlay
+                    src={ this.props.file_url }
+                />
             </div>
         );
     }

@@ -38,17 +38,17 @@ export class Message extends React.Component {
     render() {        
         return (
             <div className={`message ${this.props.me ? "me" : ""}`}>
-                <div class="head">
-                    <img class="img" src={ this.state.img } alt=""/>
-                    <div class="author">{ this.props.name }</div>
-                    <div class="when">{ this.toTime(this.props.when) }</div>
+                <div className="head">
+                    <img className="img" src={ this.state.img } alt=""/>
+                    <div className="author">{ this.props.name }</div>
+                    <div className="when">{ this.toTime(this.props.when) }</div>
                 </div>
                 
-                <div class="msgContent">
+                <div className="msgContent">
                     { this.props.message }
 
                     {this.props.moment &&
-                        <div class="moment" onClick={ this.props.timeHandler.bind(this, this.props.moment) }>Go to { this.props.moment }</div>
+                        <div className="moment" onClick={ this.props.timeHandler.bind(this, this.props.moment) }>Go to { this.props.moment }</div>
                     }
                 </div>
             </div>
